@@ -1,5 +1,4 @@
 import psycopg2
-import matplotlib.pyplot as plt
 
 username = 'postgres'
 password = 'undrugcat10'
@@ -45,4 +44,3 @@ with conn:
 
     for row in cur:
         print(f'Рік {row[0]}: ${row[1]}')
-
